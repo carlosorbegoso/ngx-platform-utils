@@ -2,7 +2,7 @@
 
 A comprehensive Angular library for platform detection using **Signals**. Detect browser, OS, device, network, user preferences, capabilities, features, and more — all reactive and SSR-safe.
 
-Built for **Angular 21+** with native Signals. No RxJS required.
+Built for **Angular 22+** with native Signals. No RxJS required.
 
 ## Installation
 
@@ -283,7 +283,7 @@ import type {
 
 ## Requirements
 
-- Angular 21+
+- Angular 22+
 - TypeScript 5.9+
 
 ## License
