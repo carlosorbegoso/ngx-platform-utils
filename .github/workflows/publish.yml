@@ -35,8 +35,4 @@ jobs:
         run: npm test
 
       - name: Publish to npm
-        run: |
-          echo "npm version: $(npm --version)"
-          echo "OIDC request URL present: ${ACTIONS_ID_TOKEN_REQUEST_URL:+yes}"
-          echo "OIDC request token present: ${ACTIONS_ID_TOKEN_REQUEST_TOKEN:+yes}"
-          npm publish ./dist/ngx-platform-utils --access public --loglevel verbose
+        run: npm publish ./dist/ngx-platform-utils --access public --provenance
