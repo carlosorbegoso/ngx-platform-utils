@@ -1,5 +1,9 @@
 # ngx-platform-utils
 
+[![npm version](https://img.shields.io/npm/v/ngx-platform-utils.svg)](https://www.npmjs.com/package/ngx-platform-utils)
+[![npm downloads](https://img.shields.io/npm/dm/ngx-platform-utils.svg)](https://www.npmjs.com/package/ngx-platform-utils)
+[![license](https://img.shields.io/npm/l/ngx-platform-utils.svg)](https://github.com/carlosorbegoso/ngx-platform-utils/blob/main/LICENSE)
+
 A comprehensive Angular library for platform detection using **Signals**. Detect browser, OS, device, network, user preferences, capabilities, features, and more — all reactive and SSR-safe.
 
 Built for **Angular 22+** with native Signals. No RxJS required.
@@ -286,6 +290,24 @@ import type {
 - Angular 22+
 - TypeScript 5.9+
 
+## Migrating from 1.x to 2.0
+
+`2.0.0` only raises the supported Angular version — **there are no public API changes**.
+Every service, signal and model works exactly as in `1.x`.
+
+- **Angular 22+** is now required (`peerDependencies` moved to `^22.0.0`).
+- If you are still on Angular 21 or earlier, stay on the `1.x` line:
+  ```bash
+  npm install ngx-platform-utils@^1
+  ```
+- To upgrade, update Angular to 22 first (`ng update @angular/core @angular/cli`),
+  then bump the library:
+  ```bash
+  npm install ngx-platform-utils@^2
+  ```
+
+No code changes are needed in your app after upgrading.
+
 ## License
 
-MIT
+[MIT](https://github.com/carlosorbegoso/ngx-platform-utils/blob/main/LICENSE) © Carlos Orbegoso Loayza
