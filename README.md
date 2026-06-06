@@ -1,59 +1,45 @@
-# NgxPlatformUtils
+# ngx-platform-utils — workspace
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.0.
+[![npm version](https://img.shields.io/npm/v/ngx-platform-utils.svg)](https://www.npmjs.com/package/ngx-platform-utils)
+[![CI](https://github.com/carlosorbegoso/ngx-platform-utils/actions/workflows/ci.yml/badge.svg)](https://github.com/carlosorbegoso/ngx-platform-utils/actions/workflows/ci.yml)
+[![license](https://img.shields.io/npm/l/ngx-platform-utils.svg)](./LICENSE)
 
-## Development server
+This is the Angular workspace for **[ngx-platform-utils](https://www.npmjs.com/package/ngx-platform-utils)** — a
+comprehensive platform-detection library built on Angular **Signals** (browser, OS, device,
+network, user preferences, capabilities, page visibility, storage and web features — all
+reactive and SSR-safe).
 
-To start a local development server, run:
+The library source lives in [`projects/ngx-platform-utils`](./projects/ngx-platform-utils).
 
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Using the library
 
 ```bash
-ng generate component component-name
+npm install ngx-platform-utils
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+📖 **Full usage docs:** [library README](./projects/ngx-platform-utils/README.md)
 
-```bash
-ng generate --help
-```
+## Developing in this repo
 
-## Building
+| Task | Command |
+|------|---------|
+| Install deps | `npm install` |
+| Build the library | `npm run build` |
+| Build (watch) | `npm run watch` |
+| Run unit tests | `npm test` |
 
-To build the project run:
+Build output is emitted to `dist/ngx-platform-utils`.
 
-```bash
-ng build
-```
+## Contributing
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+See [CONTRIBUTING.md](./CONTRIBUTING.md). CI (build + tests) runs on every push and PR.
 
-## Running unit tests
+## Releases
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Automated via GitHub Actions: bump `projects/ngx-platform-utils/package.json`, update
+[`CHANGELOG.md`](./CHANGELOG.md), then push a `vX.Y.Z` tag — the workflow publishes to npm
+using Trusted Publishing (OIDC) with build provenance. No tokens required.
 
-```bash
-ng test
-```
+## License
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+[MIT](./LICENSE) © Carlos Orbegoso Loayza
