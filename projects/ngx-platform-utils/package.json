@@ -1,6 +1,6 @@
 {
   "name": "ngx-platform-utils",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Comprehensive Angular platform detection library using Signals. Detect browser, OS, device, network, user preferences, capabilities, page visibility, storage, and web features — all reactive and SSR-safe.",
   "keywords": [
     "angular",

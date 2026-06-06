@@ -5,6 +5,17 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.1] - 2026-06-06
+
+### Added
+
+- Bundle the MIT `LICENSE` file inside the published npm package.
+
+### Fixed
+
+- Normalize `repository.url` to the `git+https://` form (removes the npm
+  publish warning).
+
 ## [2.0.0] - 2026-06-06
 
 ### Changed
@@ -35,5 +46,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - SSR-safe defaults across all services.
 - Configurable breakpoints via `providePlatformConfig`.
 
+[2.0.1]: https://github.com/carlosorbegoso/ngx-platform-utils/releases/tag/v2.0.1
 [2.0.0]: https://github.com/carlosorbegoso/ngx-platform-utils/releases/tag/v2.0.0
 [1.0.0]: https://github.com/carlosorbegoso/ngx-platform-utils/releases/tag/v1.0.0
